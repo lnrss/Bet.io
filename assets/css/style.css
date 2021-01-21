@@ -1,0 +1,182 @@
+/*!  FONTS  !*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/*!  VARIABLES  !*/
+
+:root {
+    /**===== Colors =====**/
+    --first-color: #D9113A;
+    --first-color-dark: #141C2A;
+    --text-color: #FFF;
+    --first-color-light: #4C495D;
+    --first-color-lighten: #1D2738;
+    /**===== Font and typography =====**/
+    --body-font: 'Lexend Deca', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /**===== Font weight =====**/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    /**===== Marge =====**/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+     :root {
+        --biggest-font-size: 4.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*!  NORMALIZE  !*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-dark);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*!  NAVBAR  !*/
+
+.active{
+    filter: invert(19%) sepia(52%) saturate(6157%) hue-rotate(331deg) brightness(89%) contrast(98%);
+}
+
+li:hover{
+    -webkit-transform:scale(1.2); /* Safari et Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* Internet Explorer 9 */
+    -o-transform:scale(1.2); /* Opera */
+    transform:scale(1.2);
+    -webkit-transition: all .2s ease-out; /* Safari et Chrome */
+    -moz-transition: all .2s ease-out; /* Firefox */
+    -ms-transition: all .2s ease-out; /* Internet Explorer 9 */
+    -o-transition: all .2s ease-out; /* Opera */
+    transition: all .2s ease-out;
+    
+}
+
+.dice__logo, .langage__container{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.dice__logo {
+    top:1.8rem;
+}
+
+.langage__container {
+    bottom: 1.5rem;
+}
+
+.langage__logo{
+    top: 10px;
+}
+
+.navbar {
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 5vw;
+    position: sticky;
+    background: var(--first-color-lighten);
+}
+
+.navbar_nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.navbar__link{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+}
+
+.navbar__item, .active{
+    width: 1.8rem
+}
+
+@media screen and (max-width: 1280px) {
+
+
+    .dice__logo, .langage__container{
+        width: 7vw;
+    }
+
+    .navbar{
+        width: 7vw;
+    }
+
+    .navbar__link{
+        margin: 2rem 0;
+    }
+
+}
