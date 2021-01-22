@@ -53,18 +53,24 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+header {
+    position: absolute;
 }
 
 body {
+    
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     background-color: var(--first-color-dark);
+    background-image: url("../img/backgroundpoker.png");
     color: var(--text-color);
     line-height: 1.6;
+}
+
+main {
+    margin-left: 110px;
 }
 
 h1,
@@ -98,13 +104,13 @@ img {
     filter: invert(19%) sepia(52%) saturate(6157%) hue-rotate(331deg) brightness(89%) contrast(98%);
 }
 
-li:hover{
-    -webkit-transform:scale(1.2); /* Safari et Chrome */
+li:hover, .langage__container:hover, .dice__logo:hover{
+    -webkit-transform:scale(1.2); /* Safari & Chrome */
     -moz-transform:scale(1.2); /* Firefox */
     -ms-transform:scale(1.2); /* Internet Explorer 9 */
     -o-transform:scale(1.2); /* Opera */
     transform:scale(1.2);
-    -webkit-transition: all .2s ease-out; /* Safari et Chrome */
+    -webkit-transition: all .2s ease-out; /* Safari & Chrome */
     -moz-transition: all .2s ease-out; /* Firefox */
     -ms-transition: all .2s ease-out; /* Internet Explorer 9 */
     -o-transition: all .2s ease-out; /* Opera */
@@ -116,7 +122,7 @@ li:hover{
     position: absolute;
     z-index: 2;
     cursor: pointer;
-    width: 5vw;
+    width: 110px;
     display: flex;
     justify-content: center;
 }
@@ -133,12 +139,14 @@ li:hover{
     top: 10px;
 }
 
-.navbar {
+.navbar { 
+    position: fixed;
     align-items: center;
+    top: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
-    width: 5vw;
+    width: 110px;
     position: sticky;
     background: var(--first-color-lighten);
 }
@@ -166,17 +174,90 @@ li:hover{
 
 @media screen and (max-width: 1280px) {
 
-
-    .dice__logo, .langage__container{
-        width: 7vw;
+    main {
+        margin-left: 70px;
     }
 
-    .navbar{
-        width: 7vw;
+    .navbar, .dice__logo, .langage__container{
+        position: fixed;
+        width: 70px;
     }
+
 
     .navbar__link{
         margin: 2rem 0;
     }
 
+    .navbar__item, .active{
+        width: 1.5rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 720px) {
+
+    main {
+        margin-left: 0;
+    }
+
+    .dice__logo, .langage__container{
+        display: none;
+    }
+
+    .navbar{
+        top: 90vh;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .navbar__nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar__item, .active{
+        margin: 0 1.2rem;
+    }
+
+    .navbar__nav :nth-child(1) { order: 3; }
+    .navbar__nav :nth-child(2) { order: 1; }
+    .navbar__nav :nth-child(3) { order: 2; }
+    .navbar__nav :nth-child(4) { order: 4; }
+    .navbar__nav :nth-child(5) { order: 5; }
+
+    #iconhome{
+        transform:scale(1.5);
+    }
+}
+
+/*!  HEAD  !*/
+
+.head__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+    align-items: center;
+}
+
+.logo__text{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.text__pink{
+    color: var(--first-color);
+}
+
+.connexion__link{
+    display: flex;
+    align-items: center;
+    background: var(--first-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.connexion__logo{
+    margin-right: 10px;
 }

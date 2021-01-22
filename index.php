@@ -2,9 +2,13 @@
 
  $title = 'Bet.io - Casino en ligne';
  $currentPage = 'index.php';
- include('assets/template/head.php');
+ require('assets/template/header.php');
  
 ?>
-</body>
+        <!-- Début Code -->
+            
+        </main>
+        
+    </body>
 
 </html>
