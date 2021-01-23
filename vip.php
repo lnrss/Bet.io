@@ -2,7 +2,7 @@
 
 $title = 'Bet.io - Zone VIP';
 $currentPage = 'vip.php';
-include('assets/template/head.php');
+include('assets/template/header.php');
 
 ?>
 </body>
