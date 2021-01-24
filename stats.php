@@ -1,7 +1,7 @@
 <?php
 
 $title = 'Bet.io - Statistiques';
-$currentPage = 'stats.php';
+$currentPage = '/stats';
 include('assets/template/header.php');
 
 ?>

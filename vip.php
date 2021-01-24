@@ -1,7 +1,7 @@
 <?php
 
 $title = 'Bet.io - Zone VIP';
-$currentPage = 'vip.php';
+$currentPage = '/vip';
 include('assets/template/header.php');
 
 ?>

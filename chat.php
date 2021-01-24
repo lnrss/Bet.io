@@ -1,7 +1,7 @@
 <?php
 
 $title = 'Bet.io - Chat';
-$currentPage = 'chat.php';
+$currentPage = '/chat';
 include('assets/template/header.php');
 
 ?>
