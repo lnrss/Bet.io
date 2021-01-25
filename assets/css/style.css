@@ -352,17 +352,29 @@ li:hover, .langage__container:hover, .dice__logo:hover{
 .banner__content__container{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 10px 0;
 }
 
-.banner__leftside, .banner__rightside{
+.banner__leftside{
     display: flex;
+    position: relative;
     align-items: center;
 }
 
+.banner__girl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-350px, -137px);
+}
+
+.banner__title__first{
+    font-size: 28px;
+    line-height: 52px;
+}
+
 .banner__text__promo{
-    margin-left: 30px;
     line-height: 25px;
 }
 
@@ -384,7 +396,7 @@ li:hover, .langage__container:hover, .dice__logo:hover{
     transition: all .2s ease-out;
 }
 
-.banner__button__text:hover{
+.banner__button__text:hover, .gamecard__text__hover:hover{
     box-shadow: 0px 0px 10px #D9113A;
     -webkit-transition: all .2s ease-out; /* Safari & Chrome */
     -moz-transition: all .2s ease-out; /* Firefox */
@@ -410,6 +422,20 @@ h3{
 
 .lastwinner__firstline{
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    .banner__girl{
+        display: none;
+    }
+
+    .banner__content__container{
+        justify-content: flex-start;
+    }
+
+    .banner__text__promo{
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -513,6 +539,11 @@ h3{
   border-radius: 4px;
   font-size: 12px;
   visibility: hidden;
+  -webkit-transition: all .2s ease-out; /* Safari & Chrome */
+ -moz-transition: all .2s ease-out; /* Firefox */
+ -ms-transition: all .2s ease-out; /* Internet Explorer 9 */
+ -o-transition: all .2s ease-out; /* Opera */
+ transition: all .2s ease-out;
 }
 
 
@@ -546,4 +577,3 @@ h3{
         padding: 30px 0 10px 0;
     }
 }
-

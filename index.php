@@ -8,19 +8,15 @@
         <section class="first__row">
             <div class="banner__container">
                 <div class="banner__title__container">
-                    <h3 class="banner__title">Bonus de bienvenue</h3>
+                    <h3 class="banner__title">Bonus VIP</h3>
                 </div>
                 <div class="banner__content__container">
                     <div class="banner__leftside">
-                        <a class="banner__arrow" url="#"><svg width="20" height="35" viewBox="0 0 20 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.3916 30.0987L17.363 34.1559L0.707107 17.5L17.363 0.844083L19.3916 4.90127L7.14645 17.1464L6.79289 17.5L7.14645 17.8536L19.3916 30.0987Z" fill="white" fill-opacity="0.1" stroke="#1D2738"/>
-                        </svg></a><p class="banner__text__promo"><span class="text__pinkb" id="text__hight">120%</span><br>Jusqu'à 200€</p>
+                        <img class="banner__girl" src="assets/img/bannergirl.png" alt="Deux filles tenant des cartes à la main">
+                        <div class="banner__title__first__container"><h3 class="banner__title__first">N'attendez&nbspplus&nbsp!</h3>
+                        <p class="banner__text__promo"><span class="text__pinkb" id="text__hight">-50%</span><br>Sur notre offre VIP</p>
                     </div>
-                    <div class="banner__rightside">
-                        <a class="banner__arrow" url="#"><svg width="20" height="35" viewBox="0 0 20 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.60838 4.90127L2.63698 0.844082L19.2929 17.5L2.63698 34.1559L0.60838 30.0987L12.8536 17.8536L13.2071 17.5L12.8536 17.1464L0.60838 4.90127Z" fill="white" fill-opacity="0.1" stroke="#1D2738"/>
-                        </svg></a>
-                    </div>
+                </div>
                 </div>
                 <div class="banner__button__container">
                     <a class="banner__button" href="/vip">
