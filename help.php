@@ -5,6 +5,7 @@ $currentPage = '/help';
 include('assets/template/header.php');
 
 ?>
-</body>
 
-</html>
+<!-- Code -->
+
+<?php require('assets/template/footer.php'); ?>

@@ -5,6 +5,7 @@ $currentPage = '/vip';
 include('assets/template/header.php');
 
 ?>
-</body>
 
-</html>
+<!-- Code -->
+
+<?php require('assets/template/footer.php'); ?>

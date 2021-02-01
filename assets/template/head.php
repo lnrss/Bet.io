@@ -1,7 +1,7 @@
 <main>
     <div class="head__container">
         <div class="logo__betio">
-            <a href="/" class="logo__text"><span class="text__pink">Bet.</span><span class="text__white">io</span></a>
+            <a href="/" class="logo__text"><span class="text__pinkb">Bet.</span><span class="text__white">io</span></a>
         </div>
         <div class="connexion__container"><a href="/login">
             <div class="connexion__link"><svg class="connexion__logo" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
