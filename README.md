@@ -1,6 +1,6 @@
 # Bet.io - Casino en ligne 🃏
 
-Site web du projet : http://bet-io.fr
+Site web du projet : https://bet-io.fr
 
 Bonne visite ! 👨‍💻
 
