@@ -10,3 +10,7 @@ $(".toggle__password").click(function() {
     input.attr("type", "password");
   }
 });
+
+//! POPUP
+
+$('.bx-help-circle').webuiPopover({title:'Les bonus',content:'Les bonus sont gratuits, ils permettent aux nouveaux joueurs d\'obtenir des crédits gratuitement !',style:'inverse',animation:'pop',placement:'auto-right',trigger:'hover'});

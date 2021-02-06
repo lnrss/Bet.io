@@ -20,7 +20,7 @@ include('assets/template/header.php');
     <div class="login__column__second">
         <div class="login__form__container">
             <div class="login__input__box">
-                <input required placeholder="Adresse e-mail" autofocus type="text" class="input"/>
+                <input required placeholder="Adresse e-mail" type="text" class="input"/>
                 <i class="fa fa-user"></i>
             </div>
             <div class="login__input__box">

@@ -1,9 +1,9 @@
  <?php
-
+ 
  $title = 'Bet.io - Casino en ligne';
  $currentPage = '/';
  require('assets/template/header.php');
- 
+
 ?>
         <section class="first__row">
             <div class="banner__container">
@@ -26,26 +26,33 @@
             </div>
             <div class="lastwinner__container">
                 <div class="lastwinner__title__container">
+                    <h3 class="lastwinner__title">Jeu tendance</h3>
+                </div>
+                <div class="game__trend">
+                </div>
+            </div>
+            <div class="lastwinner__container">
+                <div class="lastwinner__title__container">
                     <h3 class="lastwinner__title">Dernier gagnant</h3>
                 </div>
                 <div class="lastwinner__content__container">
                     <div class="lastwinner__firstline">
                         Léo Nourrisson,<br>
                         <span class="text__pinkb">340€</span> au John Hunter !
-                </div>
+                    </div>
                     <div class="lastwinner__secondline">
                         Théo Carlier,<br>
                         <span class="text__pinkb">500€</span> au Spartan King !
-                </div>
+                    </div>
                     <div class="lastwinner__lastline">
                         Constant Denise,<br>
                         <span class="text__pinkb">-10.50€</span> au Gems Bonanza !
-                </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="second__row">
-            <div class="card__container" data-filter = "all">
+            <div class="card__container" id="first__card__container" data-filter = "all">
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M79.0272 31.191C78.0257 26.7324 76.2608 22.4805 73.8105 18.6232C70.6309 13.6072 66.3806 9.35693 61.3646 6.17733C57.5065 3.72789 53.2537 1.96462 48.7943 0.965601C43.0014 -0.321867 36.9964 -0.321867 31.2035 0.965601C26.7441 1.965 22.4913 3.72846 18.6332 6.17796C13.6175 9.35608 9.36722 13.6048 6.18734 18.6195C3.73642 22.4783 1.9713 26.7319 0.969979 31.1923C-0.323326 36.9864 -0.323326 42.9945 0.969979 48.7887C1.9682 53.251 3.73353 57.5061 6.18734 61.3646C9.36531 66.3766 13.6125 70.6238 18.6245 73.8017C22.4835 76.256 26.7393 78.0215 31.2023 79.0197C36.9945 80.3134 43.0008 80.3134 48.793 79.0197C53.2566 78.0227 57.5132 76.2584 61.3733 73.8055C66.3855 70.6276 70.6326 66.3804 73.8105 61.3683C76.2652 57.5093 78.0312 53.2532 79.0297 48.7899C80.3234 42.9954 80.3234 36.9868 79.0297 31.1923L79.0272 31.191ZM71.2481 45.5875V34.3966L77.1154 32.7991C78.0449 37.5491 78.0449 42.4343 77.1154 47.1843L71.2481 45.5875ZM71.3324 18.8526L66.0538 21.8725L58.139 13.9596L61.1621 8.67539C65.1673 11.391 68.6184 14.845 71.3306 18.8526H71.3324ZM39.9989 2.18244C42.4128 2.1865 44.8209 2.42005 47.1906 2.87992L45.5944 8.74476H34.4034L32.8072 2.8793C35.177 2.41991 37.585 2.18658 39.9989 2.18244ZM18.8595 8.66039L21.8744 13.9277L13.9615 21.84L8.68727 18.8226C11.4014 14.8195 14.8538 11.3706 18.8595 8.66039ZM2.8843 47.1812C1.95557 42.4315 1.95557 37.5469 2.8843 32.7972L8.75477 34.3947V45.5819L2.8843 47.1812ZM8.68727 61.1614L13.9527 58.1484L21.8657 66.0613L18.8545 71.3218C14.8512 68.6111 11.4007 65.1629 8.68727 61.1614ZM32.8116 77.1073L34.4078 71.2368H45.5944L47.1912 77.1073C42.4393 78.0129 37.5591 78.0129 32.8072 77.1073H32.8116ZM61.1683 71.3055L58.1497 66.0288L66.0607 58.1184L71.3306 61.1333C68.62 65.1387 65.1711 68.591 61.1683 71.3055ZM72.5124 59.2859L66.4238 55.806C66.2156 55.6863 65.9737 55.6387 65.7356 55.6705C65.4976 55.7022 65.2766 55.8116 65.107 55.9816L56.0122 65.0732C55.8423 65.2428 55.733 65.4636 55.7012 65.7015C55.6693 65.9394 55.7167 66.1811 55.836 66.3894L59.324 72.4868C56.2122 74.3491 52.8454 75.7476 49.3299 76.6379L47.485 69.8562C47.4221 69.6245 47.2847 69.42 47.0941 69.2742C46.9034 69.1284 46.67 69.0493 46.43 69.0494H33.5678C33.3277 69.0493 33.0943 69.1283 32.9035 69.2741C32.7127 69.4199 32.5752 69.6245 32.5122 69.8562L30.6679 76.6379C27.1615 75.7499 23.8029 74.3566 20.6976 72.5018L24.1775 66.4219C24.2968 66.2136 24.3441 65.9719 24.3123 65.734C24.2804 65.4961 24.1711 65.2753 24.0012 65.1057L14.9065 56.0103C14.7368 55.8405 14.516 55.7313 14.2781 55.6996C14.0402 55.6679 13.7985 55.7153 13.5903 55.8347L7.5048 59.3177C5.64264 56.2057 4.24441 52.8387 3.35429 49.323L10.1354 47.4787C10.367 47.4156 10.5714 47.2781 10.7171 47.0873C10.8628 46.8965 10.9417 46.6631 10.9416 46.4231V33.561C10.9416 33.321 10.8627 33.0877 10.717 32.897C10.5713 32.7064 10.3669 32.569 10.1354 32.506L3.35491 30.6617C4.24746 27.1465 5.64621 23.7797 7.5073 20.6669L13.6009 24.1537C13.809 24.2733 14.0508 24.3209 14.2888 24.2892C14.5267 24.2574 14.7476 24.1481 14.9171 23.9781L24.0118 14.8833C24.1817 14.7138 24.2911 14.493 24.3229 14.2551C24.3548 14.0172 24.3074 13.7754 24.1881 13.5671L20.7044 7.48105C23.8086 5.62999 27.1647 4.23849 30.6679 3.34991L32.5122 10.126C32.5753 10.3576 32.7129 10.562 32.9036 10.7077C33.0944 10.8534 33.3278 10.9323 33.5678 10.9322H46.43C46.67 10.9323 46.9033 10.8535 47.094 10.7077C47.2847 10.562 47.4221 10.3576 47.485 10.126L49.3299 3.34991C52.8422 4.24048 56.2064 5.63669 59.3171 7.4948L55.8254 13.5984C55.7061 13.8067 55.6587 14.0484 55.6905 14.2863C55.7224 14.5242 55.8317 14.745 56.0016 14.9146L65.0963 24.0093C65.2661 24.1792 65.487 24.2885 65.7249 24.3203C65.9629 24.3522 66.2048 24.3048 66.4132 24.1856L72.5105 20.6982C74.3613 23.802 75.7532 27.1573 76.6429 30.6598L69.8656 32.5054C69.634 32.5683 69.4295 32.7057 69.2837 32.8964C69.1379 33.087 69.0588 33.3203 69.0587 33.5603V46.4225C69.0588 46.6626 69.1378 46.896 69.2836 47.0867C69.4294 47.2775 69.6339 47.415 69.8656 47.4781L76.6435 49.3224C75.7565 52.8262 74.3649 56.1824 72.5124 59.2859Z" fill="white"/>
                 <path d="M39.9989 15.6196C35.1781 15.6196 30.4656 17.0491 26.4573 19.7274C22.4489 22.4057 19.3248 26.2124 17.48 30.6662C15.6351 35.1201 15.1524 40.0209 16.0929 44.7491C17.0334 49.4772 19.3548 53.8203 22.7637 57.2292C26.1725 60.638 30.5156 62.9594 35.2437 63.8999C39.9719 64.8404 44.8727 64.3577 49.3266 62.5128C53.7804 60.668 57.5871 57.5439 60.2654 53.5355C62.9437 49.5272 64.3732 44.8147 64.3732 39.9939C64.366 33.5317 61.7956 27.3362 57.2261 22.7667C52.6566 18.1972 46.4612 15.6268 39.9989 15.6196ZM39.9989 62.1808C35.6108 62.1808 31.3212 60.8796 27.6725 58.4416C24.0239 56.0037 21.1802 52.5386 19.5009 48.4845C17.8216 44.4303 17.3823 39.9693 18.2383 35.6655C19.0944 31.3616 21.2075 27.4083 24.3104 24.3054C27.4133 21.2025 31.3666 19.0894 35.6705 18.2333C39.9743 17.3772 44.4353 17.8166 48.4895 19.4959C52.5436 21.1752 56.0087 24.0189 58.4466 27.6675C60.8846 31.3161 62.1858 35.6057 62.1858 39.9939C62.1792 45.8762 59.8395 51.5157 55.6801 55.6751C51.5207 59.8345 45.8812 62.1742 39.9989 62.1808Z" fill="white"/>
@@ -77,7 +84,7 @@
                 <path d="M79.7717 10.4695L79.3943 9.9202C78.9667 9.32071 78.134 9.18154 77.5345 9.6092C76.9432 10.0312 76.7984 10.8489 77.209 11.4482L77.561 11.9615C77.973 12.572 78.8018 12.7329 79.4123 12.3209C80.0228 11.9089 80.1837 11.08 79.7717 10.4695Z" fill="white"/>
                 </svg><span class="card__desc">Loterie</span>
             </div>
-            <div class="card__container" data-filter=".777">
+            <div class="card__container" data-filter=".seven">
                 <svg width="80" height="77" viewBox="0 0 80 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.75834 9.51668C7.38189 9.51668 9.51668 7.38189 9.51668 4.75834C9.51668 2.1348 7.38189 0 4.75834 0C2.1348 0 0 2.1348 0 4.75834C0 7.38189 2.1348 9.51668 4.75834 9.51668ZM4.75834 2.71905C5.88301 2.71905 6.79763 3.63367 6.79763 4.75834C6.79763 5.88301 5.88301 6.79763 4.75834 6.79763C3.63367 6.79763 2.71905 5.88301 2.71905 4.75834C2.71905 3.63367 3.63401 2.71905 4.75834 2.71905Z" fill="white"/>
                 <path d="M67.2965 66.6168C64.673 66.6168 62.5382 68.7516 62.5382 71.3751C62.5382 73.9986 64.673 76.1334 67.2965 76.1334C69.92 76.1334 72.0548 73.9986 72.0548 71.3751C72.0548 68.7516 69.92 66.6168 67.2965 66.6168ZM67.2965 73.4144C66.1718 73.4144 65.2572 72.4998 65.2572 71.3751C65.2572 70.2504 66.1718 69.3358 67.2965 69.3358C68.4212 69.3358 69.3358 70.2504 69.3358 71.3751C69.3358 72.4998 68.4212 73.4144 67.2965 73.4144Z" fill="white"/>
@@ -122,6 +129,86 @@
                 <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
                 <span class="gamecard__desc">Wild Machine</span>
             </div>
+            <div class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
             <div class="gamecard__container mix 777">
                 <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
                 <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
@@ -131,6 +218,81 @@
                 <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
                 <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
                 <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div class="gamecard__container mix 777">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
+            </div>
+            <div class="gamecard__container mix loterie" id="gamecard__container__last">
+                <img class="gamecard__image" id="gamecard__image__last" src="assets/img/spartanking.png" alt="Image du jeu Spartan King">
+                <a href="/spartanking" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Spartan King</span>
+            </div>
+            <div class="gamecard__container mix blackjack">
+                <img class="gamecard__image" src="assets/img/johnhunter.png" alt="Image du jeu John Hunter">
+                <a href="/johnhunter" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">John Hunter</span>
+            </div>
+            <div class="gamecard__container mix slots">
+                <img class="gamecard__image" src="assets/img/wildmachine.png" alt="Image du jeu Wild Machine">
+                <a href="/wildmachine" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Wild Machine</span>
+            </div>
+            <div id="gamecard__container__last" class="gamecard__container mix seven">
+                <img class="gamecard__image" src="assets/img/gemsbonanza.png" alt="Image du jeu Gems Bonanza">
+                <a href="/gemsbonanza" class="gamecard__text__hover">Jouer</a>
+                <span class="gamecard__desc">Gems Bonanza</span>
             </div>
         </section>
 
